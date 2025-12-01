@@ -1,1 +1,61 @@
+img {
+    width: 100px;
+}
 
+/* ABSOLUTE positioning is like setting coordinates
+* takes the element out of the "normal flow"
+* Then you set distance from sides of the page 
+* either top/left or bottom/right  */
+
+#absolute {
+    position: absolute;
+    top: 560px;
+    left: 600px;
+    z-index: 10;
+}
+
+/* FIXED positioning keeps the element
+* in the same place while scrolling
+*/
+
+#fixed {
+    position: fixed; 
+    bottom:  0px;
+    right: 0px;
+}
+
+
+/* Setting display to "inline-block" makes the div fit perfectly around the img/
+*/
+
+#container {
+    background: darkorchid;
+    display:inline-block;
+}
+
+
+/* STICKY positioning is like fixed, but
+ * only "sticks" there when you scroll to it
+ */
+
+#sticky {
+    position:sticky;
+    left: 0px;
+    top: 10px;
+}
+
+body {
+    height:1000px;
+}
+
+/* RELATIVE positioning lets you "nudge" an
+ * element from its normal position on the page
+ * (moves it relative to the static spot)
+ */
+
+ #relative {
+    position:relative;
+    left: 15px;
+    top: -15px;
+   
+ }
